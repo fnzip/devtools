@@ -6,9 +6,9 @@ services:
     container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: my_database
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      # MYSQL_DATABASE: my_database
+      # MYSQL_USER: root
+      # MYSQL_PASSWORD: root
     volumes:
       - ~/data/mysql/persistence:/var/lib/mysql
     ports:

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:7.4.2-alpine3.21
+    container_name: redis-server
+    ports:
+      - "6379:6379"
+    volumes:
+      - ~/data/redis/persistence:/data
+
+volumes:
+  redis-data:
+    driver: local
